@@ -600,6 +600,7 @@ html {
 
     @media screen and (max-width: 576px) {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 }
@@ -648,21 +649,27 @@ html {
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 16px;
-        padding-top: 35px;
+        /* font-size: 16px;
+        padding: 30px var(--footer-padding-inline) 40px var(--footer-padding-inline);
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        padding: 30px var(--footer-padding-inline) 40px var(--footer-padding-inline);
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
     }
 
 
 
     @media screen and (max-width: 576px) {
-        font-size: 16px;
+        /* font-size: 16px;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        align-items: center;
+        font-size: 16px;
     }
 
 
@@ -672,9 +679,7 @@ html {
     font-style: normal;
 
     @media screen and (max-width: 576px) {
-        margin: 35px 40px;
-        grid-column: 1;
-        grid-row: 3;
+        order: 3;
     }
 
 }
@@ -684,9 +689,7 @@ html {
     text-decoration: none;
 
     @media screen and (max-width: 576px) {
-        margin-top: 35px;
-        grid-column: 1;
-        grid-row: 2;
+        order: 2;
     }
 
 }
@@ -719,7 +722,7 @@ html {
     }
 
     @media screen and (max-width: 576px) {
-        margin-top: 35px;
+        column-gap: 27px;
     }
 
 }
